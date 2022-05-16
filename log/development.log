@@ -25720,3 +25720,143 @@ Started GET "/assets/angle/logo.png" for 127.0.0.1 at 2016-05-06 14:42:38 -0400
 
 
 Started GET "/assets/angle/user/10.jpg" for 127.0.0.1 at 2016-05-06 14:42:39 -0400
+
+
+Started GET "/" for ::1 at 2022-05-16 14:35:44 -0300
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/connection_handling.rb:50:in `establish_connection'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/railtie.rb:122:in `block (2 levels) in <class:Railtie>'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/lazy_load_hooks.rb:44:in `each'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/base.rb:26:in `<top (required)>'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/dependencies.rb:274:in `require'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/dependencies.rb:274:in `block in require'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/dependencies.rb:240:in `load_dependency'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/dependencies.rb:274:in `require'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/migration.rb:383:in `connection'
+  vendor/bundle/gems/activerecord-4.2.11.3/lib/active_record/migration.rb:370:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/gems/railties-4.2.11.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/gems/railties-4.2.11.3/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/gems/railties-4.2.11.3/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/gems/activesupport-4.2.11.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/static.rb:120:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/gems/railties-4.2.11.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/gems/railties-4.2.11.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/gems/rack-1.6.13/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Diogo/.rvm/rubies/ruby-2.5.9/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/Diogo/.rvm/rubies/ruby-2.5.9/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/Diogo/.rvm/rubies/ruby-2.5.9/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.4ms)
+
+
+Started GET "/" for ::1 at 2022-05-16 14:41:18 -0300
+
+
+Started GET "/dashboard/dashboard_v1" for ::1 at 2022-05-16 14:41:19 -0300
+Processing by DashboardController#dashboard_v1 as HTML
+  Rendered dashboard/dashboard_v1.html.erb within layouts/application (2010.0ms)
+Completed 500 Internal Server Error in 2042ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'jquery-classyloader/js/jquery.classyloader.min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/api
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/documentation
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/i18n
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/images
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/javascripts
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/stylesheets
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/bower_components
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/images
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/javascripts
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/stylesheets
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/bundle/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/bower_components
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/lib/assets/bower_components
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/bower_components):
+    203:                   <a href="#" class="list-group-item">
+    204:                      <div class="media-box">
+    205:                         <div class="pull-left">
+    206:                            <img src=<%= image_path("angle/user/02.jpg") %> alt="Image" class="media-box-object img-circle thumb32" />
+    207:                         </div>
+    208:                         <div class="media-box-body clearfix">
+    209:                            <small class="pull-right">2h</small>
+  app/assets/javascripts/charts.js:6
+  app/views/dashboard/dashboard_v1.html.erb:206:in `_app_views_dashboard_dashboard_v__html_erb___2480268869659185521_70305674276060'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (200.5ms)
+
+
+Started GET "/" for ::1 at 2022-05-16 14:45:56 -0300
+
+
+Started GET "/dashboard/dashboard_v1" for ::1 at 2022-05-16 14:45:56 -0300
+Processing by DashboardController#dashboard_v1 as HTML
+  Rendered dashboard/dashboard_v1.html.erb within layouts/application (530.4ms)
+Completed 500 Internal Server Error in 556ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'jquery-classyloader/js/jquery.classyloader.min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/api
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/documentation
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/i18n
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/images
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/javascripts
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/app/assets/stylesheets
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/bower_components
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/images
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/javascripts
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/stylesheets
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/bundle/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/bower_components
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/lib/assets/bower_components
+  /Users/Diogo/WebDevelopment/Rails/angle-rails/vendor/assets/bower_components):
+    203:                   <a href="#" class="list-group-item">
+    204:                      <div class="media-box">
+    205:                         <div class="pull-left">
+    206:                            <img src=<%= image_path("angle/user/02.jpg") %> alt="Image" class="media-box-object img-circle thumb32" />
+    207:                         </div>
+    208:                         <div class="media-box-body clearfix">
+    209:                            <small class="pull-right">2h</small>
+  app/assets/javascripts/charts.js:6
+  app/views/dashboard/dashboard_v1.html.erb:206:in `_app_views_dashboard_dashboard_v__html_erb__3461436086085231181_70127324034440'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (83.8ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (300.2ms)

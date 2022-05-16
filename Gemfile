@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails'
 
 # HEROKU doesn't support sqlite3. 
 # Comment this gem
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.6'
 # and uncomment the following
 # gem 'pg'
 # gem 'thin'
